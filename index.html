@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zallyn | Filmmaker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo"><a href="index.html">ZALLYN</a></h1>
+    <nav>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Director / Writer / Cinematographer</h2>
+    </section>
+
+    <section class="video-grid">
+  <div class="video-item">
+    <a href="film-bukan-hanya-angka.html">
+      <video src="videos/Bukan-Hanya-Angka.mp4" autoplay muted loop playsinline></video>
+      <div class="overlay"><p>Bukan Hanya Angka</p></div>
+    </a>
+  </div>
+
+  <div class="video-item">
+    <a href="film-antara-batu-jeung-doa.html">
+      <video src="videos/Trailer-ABJD.mp4" autoplay muted loop playsinline></video>
+      <div class="overlay"><p>Antara Batu Jeung Doa</p></div>
+    </a>
+  </div>
+
+  <div class="video-item">
+    <a href="film-hajat-lembur.html">
+      <video src="videos/Trailer-Hajat-Lembur.mp4" autoplay muted loop playsinline></video>
+      <div class="overlay"><p>Hajat Lembur</p></div>
+    </a>
+  </div>
+</section>
+  </main>
+
+  <script>
+    const videos = document.querySelectorAll(".video-item video");
+    videos.forEach(v => {
+      v.addEventListener("mouseenter", () => v.play());
+      v.addEventListener("mouseleave", () => v.pause());
+    });
+  </script>
+</body>
+</html>
